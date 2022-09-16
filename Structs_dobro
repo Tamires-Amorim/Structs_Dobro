@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+/*Onde Usar Structs? É recomendado utilizar structs quando você: Precisar de estrutura de dados pequenas: Como objetos de base de dados que você quer apenas passar no código como User , Product , etc.
+
+A ideia de usar uma struct é permitir que, ao armazenar os dados de uma mesma entidade, isto possa ser feito com uma única variável.*/
+
+void imprimir() {
+  printf("Imprimindo");
+  
+   
+}
+
+float dobro(float numero){
+  float d=numero*2;
+   return d;
+}
+
+
+int main(void) {
+   imprimir();
+  float numero, resultado;
+      printf("\n");
+         printf("Digite um numero ");
+            scanf("%f", &numero);
+            resultado=dobro(numero);
+  printf("O dobro é:%.f ", resultado);
+  
+  return 0;
+}
